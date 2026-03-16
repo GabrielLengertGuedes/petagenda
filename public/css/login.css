@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eef5f2 0%, #edf6f7 100%);
+}
+
+.login-page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 820px;
+  min-height: 430px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.form-side {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 40px 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  font-size: 1.2rem;
+}
+
+.brand-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #198f73;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 360px;
+}
+
+
+.form-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.custom-input {
+  height: 46px;
+  border-radius: 8px;
+  border: 1px solid #d8dee6;
+  box-shadow: none !important;
+}
+
+.custom-input:focus {
+  border-color: #21a283;
+}
+
+.login-btn {
+  background-color: #20a07e;
+  border: none;
+  height: 46px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #198f73;
+  color: #fff;
+}
+
+.bottom-links {
+  font-size: 0.85rem;
+}
+
+.small-link {
+  text-decoration: none;
+  color: #22a38a;
+}
+
+.small-link:hover {
+  text-decoration: underline;
+}
+
+.illustration-side {
+  background: linear-gradient(180deg, #eaf5fb 0%, #eef8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-illustration {
+  width: 90%;
+  max-width: 360px;
+  height: auto;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 560px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.register-wrapper {
+  padding: 36px 32px 28px;
+}
+
+.register-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+
+  .login-card {
+    max-width: 520px;
+    min-height: auto;
+  }
+
+  .form-wrapper {
+    padding: 32px 22px;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .brand-text {
+    font-size: 1.5rem;
+  }
+
+  .register-wrapper {
+    padding: 28px 20px;
+  }
+
+  .register-title {
+    font-size: 1.8rem;
+  }
+
+}

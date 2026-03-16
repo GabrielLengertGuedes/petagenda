@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <main class="login-page d-flex align-items-center justify-content-center">
+    <div class="login-card shadow-lg">
+      <div class="row g-0 h-100">
+        
+        <div class="col-lg-7 col-md-7 col-12 form-side">
+          <div class="form-wrapper">
+            <div class="brand mb-4">
+              <span class="brand-icon">🐾</span>
+              <span class="brand-text">PetAgenda</span>
+            </div>
+
+            <h1 class="login-title">Bem-vindo ao PetAgenda</h1>
+            <p class="login-subtitle">
+              Organize os agendamentos do seu pet shop de forma fácil e eficiente.
+            </p>
+
+            <% if (erro) { %>
+              <div class="alert alert-danger py-2"><%= erro %></div>
+            <% } %>
+
+            <% if (sucesso) { %>
+              <div class="alert alert-success py-2"><%= sucesso %></div>
+            <% } %>
+
+            <form action="/login" method="POST" class="mt-4">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+                <input
+                  type="password"
+                  class="form-control custom-input"
+                  id="senha"
+                  name="senha"
+                  placeholder="••••••"
+                  required
+                >
+              </div>
+
+              <button type="submit" class="btn login-btn w-100">
+                Entrar
+              </button>
+
+              <div class="bottom-links d-flex justify-content-between mt-3">
+                <a href="/esqueci-senha" class="small-link">Esqueceu a senha?</a>
+                <a href="/cadastro" class="small-link">Cadastre-se</a>
+                </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-5 d-none d-md-flex illustration-side">
+            <img class="login-illustration" src="/images/pets-login.png" alt="Pet shop illustration">
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
