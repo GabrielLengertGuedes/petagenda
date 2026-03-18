@@ -1,4 +1,4 @@
-# 🐾 PetAgenda  
+# PetAgenda  
 ### Sistema Web de Agendamento para Pet Shop
 
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green)
@@ -9,7 +9,7 @@
 
 ---
 
-## 👨‍💻 Integrantes
+## Integrantes
 
 - **Anttonio Osório Molinaro Maccagnini**  
 - **Gabriel Lengert Guedes**  
@@ -17,20 +17,20 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 O **PetAgenda** é uma aplicação web desenvolvida para gerenciar atendimentos em pet shops, permitindo o controle completo de:
 
-- 👤 Clientes  
-- 🐶 Pets  
-- 🧼 Serviços  
-- 📅 Agendamentos  
+- Clientes  
+- Pets  
+- Serviços  
+- Agendamentos  
 
 O sistema foi criado para **evitar conflitos de horários**, melhorar a organização e otimizar a rotina do estabelecimento.
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Desenvolver um sistema web com:
 
@@ -41,27 +41,27 @@ Desenvolver um sistema web com:
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
-### 🔐 Autenticação
+### Autenticação
 - Login e logout
 - Perfis de usuário (admin, atendente, cliente)
 
-### 👤 Clientes
+### Clientes
 - Cadastro, edição, listagem e exclusão
 
-### 🐶 Pets
+### Pets
 - Cadastro vinculado ao cliente
 - Informações detalhadas (espécie, raça, porte, observações)
 
-### 🧼 Serviços
+### Serviços
 - Cadastro com preço, duração e descrição
 
-### 📅 Agenda
+### Agenda
 - Visualização por dia ou semana
 - Filtros por serviço, pet ou atendente
 
-### 🔄 Agendamentos
+### Agendamentos
 - Criação com validação de conflito
 - Cancelamento e reagendamento
 - Controle de status:
@@ -72,16 +72,16 @@ Desenvolver um sistema web com:
 
 ---
 
-## 🧠 Regras de Negócio
+## Regras de Negócio
 
-- ❌ Não permitir dois agendamentos no mesmo horário  
-- ⏱️ Considerar duração do serviço para evitar conflitos  
-- 🔒 Rotas protegidas por autenticação  
-- 🔐 Senhas armazenadas com hash  
+- Não permitir dois agendamentos no mesmo horário  
+- Considerar duração do serviço para evitar conflitos  
+- Rotas protegidas por autenticação  
+- Senhas armazenadas com hash  
 
 ---
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 O sistema segue o padrão **MVC (Model-View-Controller)**:
 
@@ -92,7 +92,7 @@ O sistema segue o padrão **MVC (Model-View-Controller)**:
 
 ---
 
-## 🗄️ Modelo de Dados
+## Modelo de Dados
 
 ```txt
 Usuario (id, nome, email, senha, permissoes)
