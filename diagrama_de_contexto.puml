@@ -17,3 +17,4 @@ Rel(admin, petagenda, "Administra sistema")
 Rel(petagenda, notificacao, "Envia confirmações\n e avisos de agendamento")
 
 @enduml
+
